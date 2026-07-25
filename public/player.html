@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KuroSakura Player</title>
+<title>Yoruzakura Player</title>
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#0a0008">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -264,7 +264,7 @@ nav {
 <body>
 
 <nav>
-  <a class="logo" href="/">Kuro<span>Sakura</span></a>
+  <a class="logo" href="/">Yoru<span>zakura</span></a>
   <a class="back-link" href="/">&#8592; Browse</a>
 </nav>
 
@@ -472,7 +472,7 @@ async function loadAnime() {
 
     const t = m.title.english || m.title.romaji;
     animeTitleCache = t;
-    document.title = t + ' — KuroSakura';
+    document.title = t + ' — Yoruzakura';
     document.getElementById('title').textContent = t;
     document.getElementById('meta').innerHTML = `&#9733; ${m.averageScore?(m.averageScore/10).toFixed(1):'?'} &nbsp;·&nbsp; ${m.startDate?.year||''} &nbsp;·&nbsp; ${(m.genres||[]).slice(0,2).join(', ')}`;
 

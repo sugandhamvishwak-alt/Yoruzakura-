@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KuroSakura — Watch Anime Free</title>
+<title>Yoruzakura — Watch Anime Free</title>
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#0a0008">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -354,7 +354,7 @@ nav {
 <div class="modal-overlay" id="loginModal">
   <div class="modal">
     <button class="modal-close" onclick="closeModal()">&times;</button>
-    <div class="modal-title" id="modalTitle">Kuro<span>Sakura</span></div>
+    <div class="modal-title" id="modalTitle">Yoru<span>zakura</span></div>
     <div class="modal-sub" id="modalSub">Sign in to save your watchlist</div>
     <input class="modal-input" type="email" id="modalUsername" placeholder="Email">
     <input class="modal-input" type="password" id="modalPassword" placeholder="Password">
@@ -373,7 +373,7 @@ nav {
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo" onclick="showPage('home')">Kuro<span>Sakura</span></div>
+  <div class="nav-logo" onclick="showPage('home')">Yoru<span>zakura</span></div>
   <ul class="nav-links">
     <li><a class="active" onclick="showPage('home')">Home</a></li>
     <li><a onclick="showPage('search')">Browse</a></li>
@@ -499,7 +499,7 @@ nav {
   </div>
 
   <div class="footer">
-    <div class="footer-logo">Kuro<span>Sakura</span></div>
+    <div class="footer-logo">Yoru<span>zakura</span></div>
     <div class="footer-links">
       <span class="footer-link" onclick="showPage('search')">Browse</span>
       <span class="footer-link" onclick="showPage('movies')">Movies</span>
@@ -655,7 +655,7 @@ function closeModal() {
 function toggleAuthMode() {
   authMode = authMode === 'login' ? 'signup' : 'login';
   const isSignup = authMode === 'signup';
-  document.getElementById('modalTitle').innerHTML = 'Kuro<span style="color:var(--sakura)">Sakura</span>';
+  document.getElementById('modalTitle').innerHTML = 'Yoru<span style="color:var(--sakura)">zakura</span>';
   document.getElementById('modalSub').textContent = isSignup ? 'Create your account' : 'Sign in to your account';
   document.getElementById('modalBtn').textContent = isSignup ? 'Create Account' : 'Sign In';
   document.getElementById('modalSwitch').innerHTML = isSignup
